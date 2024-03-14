@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { connectToDatabase } from "@/lib/mongodb";
 
 export default function Home() {
+  console.log("hello");
   const [tasks, setTasks] = useState([
     { id: 1, text: "Apprendre Next.js", completed: false },
     {
@@ -26,11 +28,13 @@ export default function Home() {
   };
 
   const addTask = () => {
+    console.log('hello');
     const id = tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 1;
     if (newTask.trim() !== "") {
       setTasks([...tasks, { id, text: newTask, completed: false }]);
       setNewTask("");
       setShowInput(false);
+      connectToDatabase();
     }
   };
 
