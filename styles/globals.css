@@ -47,6 +47,21 @@ button {
   cursor: pointer;
 }
 
+.btn-delete {
+  background: #ff0000;
+  margin-left: 10px;
+}
+
+.btn-add {
+  background: green;
+  margin-left: 10px;
+}
+
+.btn-edit {
+  background: #ff9900;
+  margin-left: 10px;
+}
+
 button:hover {
   background: #0056b3;
 }
@@ -55,4 +70,10 @@ button:hover {
 .completed {
   text-decoration: line-through;
   color: #777;
+}
+
+.adding-input input {
+  width: 30%;
+  height: 30px;
+  margin-right: 10px;
 }
