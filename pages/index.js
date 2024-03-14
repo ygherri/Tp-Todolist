@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { connectToDatabase } from "@/lib/mongodb";
+//import { connectToDatabase } from "@/lib/mongodb";
 
 export default function Home() {
   console.log("hello");
@@ -34,7 +34,6 @@ export default function Home() {
       setTasks([...tasks, { id, text: newTask, completed: false }]);
       setNewTask("");
       setShowInput(false);
-      connectToDatabase();
     }
   };
 
