@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-//import { connectToDatabase } from "@/lib/mongodb";
+
 
 export default function Home() {
   console.log("hello");
